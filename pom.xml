@@ -505,12 +505,12 @@
 		<repository>
 			<id>Releases</id>
 			<name>Releases</name>
-			<url>http://35.173.36.137/nexus/content/repositories/releases/</url>
+			<url>http://18.206.74.48/nexus/content/repositories/releases/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Snapshots</name>
-			<urlhttp://35.173.36.137/nexus/content/repositories/snapshots/</url>
+			<url>http://18.206.74.48/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 </project>
