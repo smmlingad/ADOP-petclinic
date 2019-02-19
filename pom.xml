@@ -500,7 +500,7 @@
     </profiles>
 
     <url>demopetclinic</url>
-	
+	<!--  JSon 
 	<distributionManagement>
 		<repository>
 			<id>Releases</id>
@@ -512,5 +512,5 @@
 			<name>Snapshots</name>
 			<url>http://18.206.74.48/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
-	</distributionManagement>
+	</distributionManagement> -->
 </project>
