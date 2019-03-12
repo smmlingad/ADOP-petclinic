@@ -11,7 +11,7 @@ pipeline{
         stage('Build'){
             steps{
                 echo "Building out the checked-out project";
-                sh "./mvn clean install package -DskipTests" 
+                sh "./mvnw clean install package -DskipTests" 
             }
         }
         
