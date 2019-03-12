@@ -4,7 +4,7 @@ pipeline{
         stage('Git-Checkout'){
             steps{
                 echo "Checking out from Git Repo";
-                git 'https://https://github.com/smmlingad/ADOP-petclinic'
+                git 'https://github.com/smmlingad/ADOP-petclinic'
             }
         }
         
