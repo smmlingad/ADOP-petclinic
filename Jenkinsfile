@@ -1,18 +1,27 @@
 pipeline{
     agent any
     stages{
-        stage('Git-Checkout'){
+       stage('Git-Checkout'){
             steps{
                 echo "Checking out from Git Repo";
                 git 'https://github.com/smmlingad/ADOP-petclinic'
             }
         }
         
-        stage('Build'){
+       stage('Build'){
+
             steps{
                 echo "Building out the checked-out project";
-                sh "./mvnw clean install package -DskipTests" 
+                sh 'mvn -B -DskipTests clean install package'
             }
+        }
+
+       stage("Unit Tests"){
+
+            steps{
+                echo 'This job runs unit tests on Java Spring reference application.'
+                sh "mvn test"
+            } 
         }
         
         stage('SSH-Copy'){
