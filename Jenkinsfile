@@ -19,8 +19,8 @@ pipeline{
        stage("Unit Tests"){
 
             steps{
-                echo 'This job runs unit tests on Java Spring reference application.'
-                sh "mvn test"
+                echo "This job runs unit tests on Java Spring reference application."
+                sh 'mvn test'
             } 
         }
         
